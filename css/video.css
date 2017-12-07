@@ -1,10 +1,5 @@
 * { box-sizing: border-box; }
-.video-filter {
-	background: 
-	height: 100%;
-	width:  100%;
-	z-index:-98;
-}
+
 .video-background {
   background: #000;
   position: fixed;

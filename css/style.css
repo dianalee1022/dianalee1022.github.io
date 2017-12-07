@@ -1,0 +1,495 @@
+/*================================================
+Woohoo! I can't beileve you are actually reading this!
+But this css file is basically solely done by my own.
+
+Except normalizing styles.
+Thanks to Nicolas Gallagher and Jonathan Neal for their lovely work:
+http://necolas.github.io/normalize.css/
+==================================================*/
+/*================================================
+CSS TABLE OF CONTENTS:
+==================================================
+0.	Font-Awesome import
+1.	Normalize
+2.	Typography/Text-Color
+3.	Links
+4.	Headings
+5.	Content
+	5.1	Navigation
+	5.2	Site Cover
+	5.3 Footer/Socials
+
+==================================================*/
+/*================================================
+0.	Imports
+==================================================*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/*================================================
+1.	Normalize 
+==================================================*/
+
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: inherit;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/*================================================
+2.	Typography/ Color
+==================================================*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #222222;
+	font-family: 'Work Sans', 'Lato', sans-serif;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 1.8;
+	background: #FFF;
+}
+
+.text-normal {
+	color: #E6E6E6;
+}
+.text-highlight {
+	color: #F2E38A;
+}
+.text-darkest {
+	color: #729CD4;
+}
+.text-second-darkest {
+	color: #BBE3EF;
+}
+.text-third-darkest {
+	color: #D3EAF1;
+}
+/*================================================
+3.	Links
+==================================================*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+a:hover, a:focus, a:active {
+  color: inherit;
+}
+
+a:focus {
+  
+  text-decoration: none;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+/*================================================
+4.	Headings
+==================================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: #222222;
+  font-family: 'Work Sans', 'Lato', serif;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #777777;
+  text-decoration: none;
+}
+
+h1 {
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 90px;
+  }
+}
+
+h2 {
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  font-size: 25px;
+  font-size: 1.5625rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 23px;
+  font-size: 1.4375rem;
+}
+
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 19px;
+  font-size: 1.1875rem;
+}
+
+h6 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+/*================================================
+5.1	Navigation
+==================================================*/
+.main-navigation {
+	clear: both;
+	top: 0px;
+	display: block;
+	margin: auto;
+	z-index: 100;
+}
+/*
+.main-navigation ul {
+	float: left;
+	display: none;
+	list-style: none;
+}*/
+
+.main-navigation li {
+	display: inline;
+	padding-right: 50px;
+}
+
+.main-navigation li:hover {
+	color: #BBE3EF;
+}
+
+
+
+/*================================================
+5.2	Site Cover
+==================================================*/
+
+.cover-container {
+	background-color: #FFF;
+	margin-bottom: 5px;
+	width: 150%;
+	left: -15%;
+	transform:rotate(-10deg);
+	z-index: -98;
+	position: absolute;
+	top: 30%;
+	text-align: center;
+}
+
+/*================================================
+5.3	Footer/Socials
+==================================================*/
+
+.footer-socials {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.social-icon {
+    color: #000;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-instagram:hover {
+    background-color: #fb3958;
+}
+.fa-twitter {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
